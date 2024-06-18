@@ -1,0 +1,219 @@
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.create-team-content {
+  position: relative; 
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 500px;
+}
+
+.create-team-content h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.create-team-content input {
+  width: calc(100% - 22px);
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.content-button{
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #4CAF50; 
+  color: white;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease; 
+}
+
+.content-button-add{
+  width: 50%;
+  padding: 5px 15px; 
+  margin-left: auto; 
+  background-color: #45a049; 
+  border: none;
+ 
+  color: white;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease; 
+}
+.content-button-add:hover {
+  background-color: #45a049; 
+}
+.content-button:hover {
+  background-color: #45a049; 
+}
+
+
+.close-button {
+  position: absolute; 
+  top: 16px; 
+  right: 16px; 
+  padding: 0; 
+  background: transparent; 
+  border: none; 
+  outline: none; 
+  cursor: pointer; 
+  color: #000; 
+  transition: color 0.3s; 
+
+}
+
+
+.close-button:hover {
+  color: #ccc; 
+}
+
+
+.found-users-label {
+  font-size: 1em; 
+  font-weight: bold; 
+  margin-bottom: 5px; 
+}
+
+.user-list {
+  list-style-type: none; 
+  padding: 0; 
+  margin: 0; 
+}
+
+.user-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  padding: 5px 10px;
+  background-color: #f8f8f8; 
+  border-radius: 4px; 
+}
+
+.user-name {
+  margin-right: 15px; 
+  
+}
+
+.create-team-content .search-results {
+  border-top: 1px solid #ccc;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+.create-team-content .search-results {
+  border-top: 1px solid #ccc;
+  margin-top: 10px;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.search-result-item {
+  display: flex;
+  align-items: center; 
+  justify-content: space-between; 
+  margin-bottom: 5px; 
+}
+
+.search-result-item .user-name {
+  flex-grow: 1; 
+  margin-right: 10px; 
+}
+
+.selected-users-label {
+  font-size: 1em; 
+  font-weight: bold; 
+  margin-bottom: 5px; 
+}
+
+
+.user-list {
+  list-style-type: none; 
+  padding: 0; 
+  margin: 0; 
+}
+
+.user-list-item {
+  display: flex;
+  align-items: center; 
+  justify-content: space-between; 
+  margin-bottom: 5px; 
+  padding: 5px 10px;
+  background-color: #f8f8f8; 
+  border-radius: 4px; 
+}
+
+.user-name {
+  flex-grow: 1; 
+  margin-right: 10px; 
+}
+
+.content-button-remove {
+  width: auto; 
+  padding: 5px 15px;
+  background-color: #f44336; 
+  color: white;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.content-button-remove:hover {
+  background-color: #d32f2f; 
+}
+
+.content-button-add-remove {
+  width: auto; 
+  padding: 5px 15px;
+  background-color: #4CAF50; 
+  color: white;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+.content-button-remove {
+  background-color: #f44336; 
+}
+
+ .content-button-remove:hover {
+ 
+  background-color: #d32f2f; 
+}
+
+.content-button-add-remove:hover{
+  background-color: #45a049; 
+}
+
+.error-message {
+  color: red; 
+  font-size: 14px; 
+  margin-top: 5px; 
+  
+}

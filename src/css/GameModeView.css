@@ -1,0 +1,107 @@
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.game-mode-content {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 90%; 
+  position: relative;
+}
+
+.game-mode-content h2 {
+  margin-bottom: 30px;
+}
+
+.game-mode-buttons {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center; 
+  margin-bottom: 30px;
+}
+
+.game-mode-button {
+  padding: 10px 20px; 
+  margin: 5px; 
+  flex: 0 1 auto; 
+  max-width: 45%; 
+  word-break: break-word; 
+}
+
+.game-mode-button.solo {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.game-mode-button.solo:hover {
+  background-color: #45a049;
+}
+
+.game-mode-button.team {
+  background-color: #668193;
+  color: white;
+}
+
+.game-mode-button.team:hover {
+  background-color: #5e7889;
+}
+
+.game-mode-button .icon {
+  margin-right: 8px;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: #000000;
+}
+
+.close-button:hover {
+  color: #7d7b7b;
+}
+
+@media (max-width: 600px) {
+  .game-mode-content {
+    padding: 20px; 
+  }
+  .game-mode-button {
+    padding: 5px 10px; 
+    font-size: 16px; 
+    max-width: 100%; 
+  }
+}
+
+
+.game-mode-button.gameWithFriends {
+  background: linear-gradient(
+    to right,
+    hwb(226 73% 11%),
+    #c9d1ee
+  ); 
+  color: rgb(0, 0, 0); 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.game-mode-button:hover {
+  transform: translateY(-2px); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+

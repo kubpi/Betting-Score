@@ -1,0 +1,264 @@
+.main-container {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  max-width: 800px;
+  margin: 40px auto;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 6px 6px rgba(0, 0, 0, 0.23);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.podium-title {
+  font-size: 28px;
+  color: #030303;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.podium-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.podium {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.podium-place {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+  background-color: #e0e0e0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.podium-place:hover {
+  transform: scale(1.05);
+  z-index: 10;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.first-place {
+  height: 250px;
+  order: 2;
+}
+
+.second-place {
+  height: 200px;
+  order: 1;
+}
+
+.third-place {
+  height: 200px;
+  order: 3;
+}
+
+.first-place {
+  background-color: #ffd700;
+}
+.second-place {
+  background-color: #c0c0c0;
+}
+.third-place {
+  background-color: #cd7f32;
+}
+
+.podium-number {
+  position: absolute;
+  bottom: 100%;
+  font-size: 2em;
+  font-weight: bold;
+  color: black;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease-in-out, text-shadow 0.3s ease;
+}
+.podium-place:hover .podium-number {
+  transform: translateY(-5px);
+  text-shadow: 0 4px 6px rgba(0, 0, 0, 0.8);
+}
+
+.additional-rankings {
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.additional-place {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 5px;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.additional-place:hover {
+  background-color: #e7e7e7;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.additional-rank {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.additional-name {
+  flex-grow: 1;
+  text-align: left;
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+  margin-left: 15px;
+}
+
+.points,
+.matches {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+.points {
+  margin-right: 10px;
+}
+.pagination-controls {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.pagination-controls button {
+  background-color: #474747;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.pagination-controls button:hover {
+  background-color: #5e5e5e;
+}
+
+.pagination-controls button.active {
+  background-color: #347c22;
+  color: #fff;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    padding: 20px;
+  }
+
+  .podium-container {
+    flex-direction: column;
+  }
+
+  .place {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .pagination-controls {
+    flex-direction: column;
+  }
+
+  .pagination-controls button {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    padding: 20px;
+  }
+
+  .podium-container,
+  .podium {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .first-place,
+  .second-place,
+  .third-place {
+    order: 0;
+    height: auto;
+    margin-bottom: 15px;
+  }
+
+  .podium-number {
+    position: static;
+    font-size: 1.5em;
+    margin-bottom: 5px;
+  }
+
+  .pagination-controls {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pagination-controls button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+.rank-name,
+.points {
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.podium-place:hover .rank-name,
+.podium-place:hover .points {
+  color: #212121;
+  transform: scale(1.1);
+}
+
+.additional-place:hover {
+  transform: translateY(-3px);
+  background-color: #eeeeee;
+}
+
+.pagination-controls button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.pagination-controls button.active {
+  transform: scale(1.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0px rgba(255, 215, 0, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(255, 215, 0, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0px rgba(255, 215, 0, 0);
+  }
+}
+
+.first-place {
+  animation: pulse 2s infinite;
+}

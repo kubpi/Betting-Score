@@ -1,0 +1,185 @@
+.tabs-container {
+  margin-top: 40px;
+
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  overflow: hidden;
+}
+
+.tabs-bar {
+  display: flex;
+  justify-content: start;
+
+  padding: 10px;
+  border-bottom: 1px solid #e0e0e0;
+
+  overflow-x: auto;
+
+  white-space: nowrap;
+
+  scrollbar-width: thin;
+
+  scrollbar-color: #888 #f1f1f1;
+
+  flex-grow: 1;
+}
+
+.tab {
+  padding: 10px 20px;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.3s ease;
+  flex-shrink: 0;
+
+  margin-right: 10px;
+}
+
+.tabs-bar::-webkit-scrollbar {
+  height: 8px;
+}
+
+.tabs-bar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.tabs-bar::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+.tabs-bar::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.tab.active {
+  color: #466551;
+}
+
+.tab:not(.active):hover {
+  color: #0056b3;
+}
+
+.tab-count {
+  background: white;
+  color: #466551;
+  padding: 2px 8px;
+  margin-left: 8px;
+  border-radius: 16px;
+  font-size: 0.9em;
+}
+
+.progress-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background-color: #466551;
+  transition: all 0.3s ease;
+}
+
+.progress-bar.deactivated {
+  background-color: #ccc;
+}
+
+.tab-content {
+  padding: 20px;
+}
+
+.buttons-container {
+  display: flex;
+  gap: 10px;
+
+  padding: 10px;
+}
+
+.searchBar-container {
+  margin-top: 15px;
+}
+
+.tabs-container {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+  background-color: #f2f2f2;
+
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  overflow: hidden;
+
+  padding: 10px;
+}
+
+.tab {
+  margin-right: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.add-tab-button {
+  margin-left: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+
+  height: 40px;
+
+  background-color: #466551;
+  color: white;
+  border-radius: 50%;
+  font-size: 20px;
+
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.add-tab-button:hover {
+  background-color: #0056b3;
+}
+
+.searchBar-container {
+  margin-top: 0;
+}
+
+.users-table {
+  overflow-x: auto;
+}
+
+.close-tab-button {
+  margin-left: 8px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.close-tab-button:hover {
+  background-color: #f2f2f2;
+}
+
+.tab.isGameWithFriends {
+  background: linear-gradient(to right, hwb(226 73% 11%), #c9d1ee);
+  color: black;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tab:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.tab.active {
+  background: #466551;
+  color: white;
+}
+
+.progress-bar.isGameWithFriends {
+  background-color: #88a2f9;
+}
